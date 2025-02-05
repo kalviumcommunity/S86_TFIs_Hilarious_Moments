@@ -1,0 +1,14 @@
+{
+  "name": "s86_tfis_hilarious_moments",
+  "version": "1.0.0",
+  "description": "**TFI’s Hilarious Moments** is a platform designed to curate and share the funniest scenes from Telugu films (TFI). Users can explore, rate, comment on, and share their favorite comedic moments.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+  }
+}
