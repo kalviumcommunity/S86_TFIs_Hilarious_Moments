@@ -1,8 +1,8 @@
 const express = require('express');
-const Scene = require('./models/Scene'); // Import Mongoose model
+const Scene = require('./models/Scene');
 const router = express.Router();
 
-// CREATE - Add a new scene
+
 router.post('/scenes', async (req, res) => {
   try {
     const newScene = new Scene(req.body);
@@ -13,7 +13,7 @@ router.post('/scenes', async (req, res) => {
   }
 });
 
-// READ - Get all scenes
+
 router.get('/scenes', async (req, res) => {
   try {
     const scenes = await Scene.find();
@@ -23,7 +23,7 @@ router.get('/scenes', async (req, res) => {
   }
 });
 
-// READ - Get a single scene by ID
+
 router.get('/scenes/:id', async (req, res) => {
   try {
     const scene = await Scene.findById(req.params.id);
@@ -33,7 +33,7 @@ router.get('/scenes/:id', async (req, res) => {
   }
 });
 
-// UPDATE - Modify a scene
+
 router.put('/scenes/:id', async (req, res) => {
   try {
     const updatedScene = await Scene.findByIdAndUpdate(req.params.id, req.body, { new: true });
@@ -43,7 +43,7 @@ router.put('/scenes/:id', async (req, res) => {
   }
 });
 
-// DELETE - Remove a scene
+
 router.delete('/scenes/:id', async (req, res) => {
   try {
     const deletedScene = await Scene.findByIdAndDelete(req.params.id);
