@@ -1,47 +1,36 @@
-# TFI’s Hilarious Moments
 
-## Project Overview
-**TFI’s Hilarious Moments** is a platform designed to curate and share the funniest scenes from Telugu films (TFI). Users can explore, rate, comment on, and share their favorite comedic moments.
+**Project Title**: TFI’s Hilarious Moments
 
-## Key Features
-- **Scene Compilation**: A collection of funny scenes from TFI movies.
-- **Search & Filter**: Easily find scenes using categories and filters.
-- **User Engagement**: Users can rate, comment, and share their favorite moments.
-- **Bookmarking**: Save favorite scenes for later.
+**Project Overview**: A fun and engaging platform that curates and showcases the funniest scenes from Telugu Films (TFI). Users can explore, rate, comment, and share hilarious movie moments — bringing Telugu film comedy to the spotlight.
 
-## Tech Stack
-_(Specify your chosen technologies here, e.g., React, Node.js, MongoDB, etc.)_
+**Key Features**:
+- Browse a curated list of funny scenes from TFI movies.
+- Use filters and search options to find scenes based on categories, actors, or movies.
+- Rate and comment on your favorite moments.
+- Share scenes on social media platforms.
+- Bookmark scenes to view later.
 
-## Why This Project?
-This project blends entertainment with technology, providing a fun and engaging platform while allowing me to improve both frontend and backend development skills.
+**Tech Stack**:
+- **Frontend**: React, Tailwind CSS, Vite
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
 
-## milestone2
-  Initialize npm project using npm init .
-  Add a .gitignore file to exclude node_modules/ and package-lock.json/ and then added the  ".gitignore" file  and pushed the branch.
-  
-## MILESTONE 3:
-- First I created a new branch setup-express .
-- Added server.js with basic Express setup and /ping route.
-- Committed and pushed the changes to GitHub.
-- Created a Pull Request (PR) and requested an AI review using @CodiumAI-Agent /review.
-- Reviewed feedback and merged the PR into the main branch.
+**Why This Project**: This project combines humor with technology, making it both fun and functional. It allows users to relive iconic comedy scenes while helping me improve full-stack development skills — from UI/UX to backend integration and deployment.
 
-## MILESTONE 4:
-Deployed App Link
+**Installation Instructions**:
+1. Clone the repository: `git clone <repository-url>`
+2. Navigate into the project folder: `cd TFI-Hilarious-Moments`
+3. Install dependencies: `npm install`
+4. Start the development server: `npm run dev`
+5. Visit the app at: `http://localhost:5173`
 
+**Tasks Completed**:
+- Initialized npm project and created `.gitignore` file.
+- Set up Express server with `/ping` route for basic testing.
+- Pushed changes to GitHub and created a pull request using @CodiumAI-Agent for review.
+- Deployed backend using Render.com.
+- Connected MongoDB and tested routes using Bruno API Client.
+- Created a modern, responsive **Landing Page** using React and Tailwind CSS.
+- Integrated frontend with routing and added feature highlights.
 
-You can view the live app by visiting the following link:
-
-[https://s86-tfis-hilarious-moments.onrender.com]
-
-Deployment Process
-Login: Logged into Render.com using my Kalvium Community Google account.
-Deploy: Navigated to the Deploy section, selected the Public repository option, and imported the project files.
-Automatic Setup: Render automatically detected the necessary environment settings and deployed the app. I just clicked Deploy, and Render handled the rest.
-Updated Readme: Added the deployment link to this Readme so you can access the live app easily.
-
-## Bruno API Testing Requests:
-
-This Assignment includes API requests generated and exported from Bruno, organized in a folder called docs.bruno. The requests can be used for testing APIs or further integration in the project.
-
-- Bruno: Used to generate and export API requests.
+**Render Deployed Link**: **https://s86-tfis-hilarious-moments.onrender.com**
