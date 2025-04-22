@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const LandingPage = () => {
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen bg-gradient-to-br from-yellow-100 to-pink-100 text-gray-800 px-6 py-12">
       <div className="max-w-5xl mx-auto text-center space-y-8">
@@ -11,10 +13,14 @@ const LandingPage = () => {
           Dive into the funniest scenes from Telugu films! Watch, rate, comment, and share the moments that made you laugh the hardest.
         </p>
         <div className="flex justify-center gap-4 flex-wrap">
-          <button className="text-lg px-6 py-3 bg-pink-500 hover:bg-pink-600 text-white rounded-2xl shadow-md">
+          <button className="text-lg px-6 py-3 bg-pink-500 hover:bg-pink-600 text-white rounded-2xl shadow-md"
+          onClick={() => navigate("/signup")}
+          >
             Explore Moments
           </button>
-          <button className="text-lg px-6 py-3 rounded-2xl border border-pink-500 text-pink-600 hover:bg-pink-100">
+          <button className="text-lg px-6 py-3 rounded-2xl border border-pink-500 text-pink-600 hover:bg-pink-100"
+          onClick={() => navigate("/login")}
+          >
             Submit a Scene
           </button>
         </div>

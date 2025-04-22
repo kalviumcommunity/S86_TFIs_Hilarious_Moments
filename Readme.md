@@ -34,3 +34,4 @@
 - Integrated frontend with routing and added feature highlights.
 
 **Render Deployed Link**: **https://s86-tfis-hilarious-moments.onrender.com**
+**Netlify Deployed Link**: **https://asap-tfi.netlify.app/**

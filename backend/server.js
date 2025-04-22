@@ -1,35 +1,23 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const cors = require("cors");
 require("dotenv").config();
 
 const app = express();
-const PORT = process.env.PORT || 5000;
-const MONGODB_URI = process.env.MONGODB_URI;
 
-
-const sceneRoutes = require("./routes");
-
-
+// Middleware
 app.use(express.json());
-app.use("/api", sceneRoutes);
+app.use(cors());
 
+// MongoDB connection
+mongoose.connect(process.env.MONGODB_URI, {
+  
+}).then(() => console.log("Connected to MongoDB"))
+  .catch((err) => console.log("MongoDB connection error:", err));
 
-mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(() => console.log("✅ MongoDB Connected"))
-    .catch(err => console.error("❌ MongoDB Connection Error:", err));
+// Routes
+app.use("/api", require("./routes/authRoutes"));
+app.use("/api/moments", require("./routes/momentRoutes"));
 
-
-app.get("/", (req, res) => {
-    const status = mongoose.connection.readyState === 1 ? "Connected" : "Not Connected";
-    res.send(`Database connection status: ${status}`);
-});
-
-
-app.get("/ping", (req, res) => {
-    res.json({ message: "Pong! Server is running." });
-});
-
-
-app.listen(PORT, () => {
-    console.log(`🚀 Server is running on http://localhost:${PORT}`);
-});
+const port = process.env.PORT || 5000;
+app.listen(port, () => console.log(`Server running on port ${port}`));
